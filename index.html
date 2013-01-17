@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Riduci immagine di 10px</title>
+<script type="text/javascript">
+<!--
+  function resizeImage() {
+		var foto = document.getElementById('foto');
+		//recupero l'elemento, potrei omettere
+		var larghezza = foto.getAttribute('width');
+		//leggo il valore della larghezza
+		larghezza -= 10;
+		//riduco di 10px alla volta il valore della larghzza
+		foto.setAttribute('width', larghezza);
+		//associo all'attributo width la nuova larghezza
+	}
+//-->
+</script>
+</head>
+
+<body>
+<img src="Immagini/foto.jpg" width="400" id="foto" />
+<input type="button" name="Riduci" onclick="resizeImage()" value="Riduci" />
+</body>
+</html>
